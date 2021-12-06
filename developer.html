@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang='en'> 
+<head> 
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <title>Mahfazzalin Shawon Reza's portfolio</title> 
+ <style type="text/css" media="all">
+
+* {
+   padding:0; 
+   margin:0;
+}
+
+body {
+    width: 100%;
+    background-color:#fff;
+    font-size:14px;
+}
+
+#topmenu {
+   position:fixed ; 
+   z-index:99;
+   width:100%;
+   height:50px;
+   background-color:#277488;
+   border-bottom:3px solid gray;
+}
+
+#sidemenu {
+   top:0;
+   left:-100%;
+   right:0;
+   position:absolute ; 
+   z-index:999;
+   width:100%;
+   height:100%;
+   background-color:#277488;
+   transition:0.3s;
+}
+
+#sidemenu h3 {
+   padding:10px 10px 20px 10px;
+   color:#1d2629;
+}
+
+#sidemenu ul {
+   width:100%; 
+   list-style:none ;
+   margin-top:0px 12px;
+}
+
+#first {
+   color:#3f5b62;
+   font-size:15px;
+   font-weight:bold;
+   }
+
+#sidemenu ul li {
+   height:50px; 
+   line-height:50px;
+   border-bottom:1px solid #303030;
+   padding:0px 8px;
+   background:transparent ;
+}
+
+#sidemenu ul li:hover {
+   background:#303030;
+}
+
+#sidemenu ul li a {
+   font-size:15px; 
+   text-decoration:none;
+   color:#fff;
+}
+
+#sidemenu ul li a:hover {
+font-style:italic; 
+color:#42484a;
+}
+
+#toggle {
+   font-size:20px;
+   background:transparent;
+   border:none;
+   position:absolute;
+   left:5px;
+   top:5px;
+   padding:5px;
+   color:#fff;
+}
+
+
+#logo {
+   position:absolute ; 
+   left:40%;
+   top:12px;
+   color:#628a15;
+   font-size:20px;
+   font-weight:bold ;
+   }
+   
+#close {
+   position:absolute;
+   top:10px;
+   right:10px;
+   background:transparent ;
+   color:#3f5b62;
+   padding:5px;
+   font-size:20px;
+   border:0px;
+}
+
+#search-box {
+top:-100%;
+position:fixed;
+width:100%;
+background-color:#303030 ;
+height:50px;
+padding:4px;
+transition:0.5s;
+}
+
+#search-form {
+width:98.5%;
+height: 40px;
+margin-top:1px;
+border:1px solid #888888;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background-color: rgba(86, 86, 86, 0.31);
+overflow: hidden;
+margin-right:5px;
+}
+
+#search-text 
+{
+font-size: 14px;
+color:#fff;
+border-width: 0;
+background: transparent;
+margin-left:26px;
+margin-top:-2px;
+}
+
+#search-box input[type="text"]
+{
+padding: 12px 0 12px 1em;
+color:#888888;
+outline: none;
+}
+
+#close2 {
+   position:absolute ; 
+   margin-top:11px;
+   background:transparent ;
+   border:0;
+   font-size:15px;
+   color:#888888;
+   right:20px;}
+
+
+#firsts {
+  height:355px ;
+  
+  
+  width: 100%;
+  border-radius:900px 190px 323px 13px;
+  padding-left: 30px;
+  background-color: #6eb0c0;
+}
+#second {
+height:119px ;
+  
+  
+  width: 100%;
+  border-radius:0px 109px 323px 200px;
+  padding-left: 30px;
+  background-color: #3c9ab2;
+}
+#mahf {
+  height: 0px;
+  width: 2px;
+  color: #3f5b62;
+  border-radius: 100px;
+}
+#about {
+  height: 30px;
+  width: 190px;
+  color: #84822b;
+  text-align: center;
+  background-color:#fff;
+  border-radius: 23px;
+
+  
+}
+#footer {
+  text-align: center;
+  font-size: 25px;
+  text-decoration-color: #223438;
+}
+#footerlink.li {
+  position: relative;
+}
+ </style>
+</head> 
+ <body>
+        <div id='topmenu'>
+        <button id='toggle' onclick='openMenu ()' value=''>
+        <i class='glyphicon glyphicon-th-list'></i>
+        </button>
+        <span id='logo'>Mahfazzalin</span>
+
+</div>
+<div id='sidemenu'>
+<ul>
+<li id='first'>Menu</li>
+<li><a href="https://Sohoz-path.mahfazzalin.repl.co"> Home</a></li>
+<li><a href="https://www.sololearn.com/Profile/18342142/?ref=app">follow me on Sololearn</a></li>
+<li><a href='mailto:mahfazzalin1@gmail.com'>Mail to me</a></li>
+</ul>
+<button id='close' onclick='closeMenu()' value=''><i class='glyphicon glyphicon-remove'></i></button>
+</div>
+<script>
+
+function openMenu(){ document.getElementById("sidemenu").style.left="0px";
+}
+
+function closeMenu () {
+document.getElementById ("sidemenu").style.left="-100%" 
+}
+
+</script>
+
+<div id='search-box'>
+<button id='close2' onclick='closeSearch()' value=''>
+<i class='glyphicon glyphicon-remove'></i>
+</button>
+<script>
+function closeSearch () {
+document.getElementById ("search-box").style.top="-100%"
+}
+</script>
+<form action='/search' id='search-form' method='get' target='_top'>
+<input id='search-text' name='q' placeholder='Cari Artikel...' type='text'/>
+<button id='tombolCari' type='submit' style='position:absolute; left:8px; top:21px; background:transparent; border:none;'><span><i class='glyphicon glyphicon-search' style='font-size:25px; position:absolute; top:-6px; left:5px; color:#888888;'></i></span></button>
+</form>
+<script>
+function mySearch () {
+   document.getElementById ("search-box").style.top="50px"
+}
+</script>
+</div>
+<br>
+<br>
+<div id="mahf">
+ <img src="https://i.ibb.co/0XfCTtH/IMG-1627049050324-removebg-preview-1.png" alt="IMG-1627049050324-removebg-preview-1" width="355px"  >
+</div>
+<div id="firsts">
+  Mahfazzalin Shawon Reza Mahfazzalin Shawon Reza
+</div>
+<div id="second">
+  <div id="about">
+    <p>ABOUT ME</p>
+  </div>
+  I'm trying to learn Web developing,<br>programming and machine automation.<br> Sololearn helps a lot. I can make website a little bit.<br> And am from Bangladesh.  
+  
+</div>
+<br />
+<br />
+<div>
+  <p id="footer">follow me</p>
+<a href="#">●</a>
+<a href="#">●</a>
+<a href="#">●</a>
+<a href="#">●</a>
+  <a href="https://www.sololearn.com/Profile/18342142/?ref=app"><img src="https://i.ibb.co/qjZ0hf6/sololearn.png" alt="sololearn" border="0" height="70px" width="70px"></a>
+<a href="https://www.facebook.com/mahfazzalinsawon.raza"><img src="https://i.ibb.co/6Xk2jBh/facebook-logo-png-20.png" alt="facebook-logo-png-20" border="0" height="60px" width="60px"></a>
+<a href="https://www.instagram.com/p/ByQS_rQJAjm/?utm_medium=copy_link"><img src="https://i.ibb.co/zRLmdZ7/new-instagram-logo-with-transparent-background-9.png" alt="new-instagram-logo-with-transparent-background-9" border="0" height="60px" width="60px"></a>
+<a href="https://github.com/Mahfazzalin"><img src="https://i.ibb.co/QC9WCcG/github-PNG40.png" alt="github-PNG40" border="0" height="70" width="70px"></a>
+<a href="#">●</a>
+<a href="#">●</a>
+<a href="#">●</a>
+<a href="#">●</a>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<p align="center"><b>learn from old and do new thing.</b></p>
+
+    </body>
+</html>
